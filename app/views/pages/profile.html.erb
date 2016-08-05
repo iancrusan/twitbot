@@ -7,14 +7,16 @@
 
 
 <div class="row">
-  <div class="col-xs-3">
-
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <p>Fleets</p>
+      <div class="col-xs-3">
+        <%= render 'layouts/components/post_form'%>
+        <% for @p in @posts do %>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <%= @p.content %>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+  <% end %>
 
   <div class="col-xs-6">
     <div class="panel panel-default">
