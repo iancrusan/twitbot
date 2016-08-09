@@ -1,4 +1,8 @@
 class PostsController < ApplicationController
+  # def index
+  #
+  # end
+
   def new
     @post = Post.new
   end
@@ -6,6 +10,9 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
   end
+
+
+
   private
   def post_params
     params.require(:post).permit(:user_id, :content)

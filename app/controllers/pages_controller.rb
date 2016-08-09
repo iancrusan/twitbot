@@ -2,17 +2,13 @@ class PagesController < ApplicationController
   def index
   end
 
-  def new
-    @post = Post.new
-
-  end
 
   def home
     @posts = Post.all
   end
 
   def profile
-    @post = Post.new
+
     if (User.find_by_username(params[:id]))
       @username = params[:id]
     else
