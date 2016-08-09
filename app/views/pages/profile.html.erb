@@ -1,44 +1,44 @@
-
-<div class="jumbotron">
-  <div class="container">
-    <center><h1><%= current_user.username %></h1></center>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="jumbotron">
+      <center><h1>current_user.email</h1></center>
+    </div>
   </div>
 </div>
 
 
 <div class="row">
-      <div class="col-xs-3">
-        <%= render 'layouts/components/post_form'%>
-        <% for @p in @posts do %>
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <%= @p.content %>
-          </div>
-        </div>
-      </div>
-  <% end %>
 
-  <div class="col-xs-6">
-    <div class="panel panel-default">
-      <div class="panel-body">
-        Your timeline is currently empty
-      </div>
-  </div>
-</div>
   <div class="col-xs-3">
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <p>Who to Follow</p>
-      </div>
-    </div>
-  </div>
+     <div class="panel panel-default">
+       <div class="panel-body">
+         <p>User</p>
+       </div>
+     </div>
+     <div class="panel panel-default">
+       <div class="panel-body">
+         <p>Trends</p>
+       </div>
+     </div>
+   </div>
 
-  <div class="col-xs-3 col-xs-offset-9">
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <p>tends</p>
-      </div>
-    </div>
-  </div>
+   <div class="col-xs-6">
+   <div class="panel panel-default">
+     <div class="panel-body">
+       <p>Tweets</p>
+     </div>
+   </div>
+ </div>
 
-</div>
+ <div class="col-xs-3">
+   <div class="panel panel-default">
+     <div class="panel-body">
+       <p>Who to Follow</p>
+     </div>
+   </div>
+   <div class="panel panel-default">
+     <div class="panel-body">
+       <p>About</p>
+     </div>
+   </div>
+ </div>
